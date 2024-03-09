@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subir Imagen y Texto</title>
+</head>
+<body>
+  <h1>Subir Imagen y Texto</h1>
+  
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="image">Selecciona una imagen:</label>
+    <input type="file" name="image" accept="image/*" required>
+    
+    <br>
+    
+    <label for="text">Ingresa el texto:</label>
+    <input type="text" name="text" required>
+    <label for="newInput">Nuevo Input:</label>
+<input type="text" name="newInput" required>
+
+    <br>
+
+    <button type="submit">Subir</button>
+  </form>
+</body>
+</html>

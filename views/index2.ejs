@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <img src="/plates/<%= imageName %>" alt="" width="400px" height="400px">
+    <form action="/upload/<%= imageName %>" method="post" enctype="multipart/form-data">
+        <label for="text">Ingresa el texto:</label>
+        <input type="text" name="text" required>
+      
+        <br>
+      
+        <button type="submit">Subir Archivo .txt</button>
+      </form>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.1/socket.io.js"></script>
+      <script>
+        const socket = io();
+    
+        socket.on('alert', (message) => {
+          alert(message);
+        });
+      </script>
+</body>
+</html>
